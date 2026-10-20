@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  width: 100vh;
+  height: 100vh;
+}
+.main-body{
+    display: flex;
+
+}    
+.first-section{
+
+}
+.second-section{
+
+}
+.third-section{
+
+}
+.fourth-section{
+    
+}
