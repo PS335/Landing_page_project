@@ -5,7 +5,13 @@
 .main-body{
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }    
+.first-section,.second-section,.third-section,.fourth-section{
+    height: 300px;
+    width: auto;
+}
 .first-section{
     background-color:rgb(34, 48, 88);
     display: flex;  
@@ -41,10 +47,80 @@ a{
 
 .second-section{
    background-color: rgb(69, 117, 159);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   gap: 10px;
 }
-.third-section{
 
+.second-section-title{    
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.box-collection{ 
+    display: flex;
+    gap: 10px;
+}
+.box{
+    height: 100px;
+    width: auto;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.third-section{
+    background-color: rgb(164, 175, 186);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.comment{
+    font-size: 24px;
+    font-style:italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
 }
 .fourth-section{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    gap: 30px;
 
+}
+.above-footer{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giant-box{
+    background-color: rgb(65, 139, 237);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+}
+.button{
+    background-color: inherit;
+    height:35px;
+    width: auto;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    align-self: center;
+}
+.footer{
+    background-color:rgb(13, 13, 66) ;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 20px;
 }
