@@ -1,48 +1,71 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .main-body{
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
+    
+
 }    
 .first-section,.second-section,.third-section,.fourth-section{
-    height: 300px;
-    width: auto;
+  height: auto;
+  min-height: 350px;  
+   flex: 1; 
 }
 .first-section{
     background-color:rgb(34, 48, 88);
     display: flex;  
+    
     flex-direction: column;
+    gap: 30px;
+    align-items: center;
 }
-.header ul{
+.header{
+    margin-top: 20px;
     display: flex;
-    justify-content: flex-start;
-    gap: 15px;
+    width: 80%;
+    justify-content: space-between;
+    
+
 }
-li{
+ul{
+    display: flex;
+    gap: 45px;
+    
+    
+}
+
+ li{
     list-style-type: none;
-   
-}
+ }      
 a{
     color: white;
-    font-size: 22px;
-     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
 }
 .after-header{
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex: 1;
+    width: 80%;
 }
+
+
 .description{
     display: flex;
     gap: 20px;
+    
 }
-.description div div{
+.page-title, .about-page{
     color: white;
+    margin-bottom: 10px;
+}
+.page-title{
+    font-weight: 700;
+    font-size: 36px;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 
 .second-section{
@@ -61,28 +84,44 @@ a{
 }
 .box-collection{ 
     display: flex;
-    gap: 10px;
+    gap: 40px;
+    flex-flow: row wrap;
 }
 .box{
-    height: 100px;
-    width: auto;
-    background-color: aqua;
+    height: 150px;
+    width:150px;
+    max-width: 300px;
+    background-color: rgb(213, 243, 243);
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    
+}
+.about-boxes{
+    margin-top: 10px;
+    text-align: center;
 }
 
 .third-section{
-    background-color: rgb(164, 175, 186);
+    background-color: rgb(164, 175, 186);   
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
 }
+.some-saying{
+    width: 80%;
+}
 .comment{
     font-size: 24px;
     font-style:italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    
+}
+.author{
+    font-weight: 700;
+    font-style: italic;
+    text-align: right;
 }
 .fourth-section{
     background-color: azure;
@@ -103,14 +142,23 @@ a{
 .giant-box{
     background-color: rgb(65, 139, 237);
     border-radius: 10px;
+    height:180px;
+    width:80%;
     padding: 30px;
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.something {
+    color: white;
+    
 }
 .button{
-    background-color: inherit;
+    background-color: rgb(65, 139, 237);;
     height:35px;
-    width: auto;
+    font-weight: 700;
+    width: 150px;
     padding: 10px;
     border: 2px solid white;
     border-radius: 8px;
